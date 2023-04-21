@@ -1,0 +1,14 @@
+name = "test"
+compatibility_date = "2023-01-01"
+
+#[[ d1_databases ]]
+#binding = "DB"
+#database_name = "cloudflare-chatgpt-dogs"
+#database_id = "c18d2777-c0b5-43e6-912e-c80ec6837dd9"
+
+[[queues.producers]]
+queue = "discord-messages" 
+binding = "DISCORD_MESSAGES"
+
+[[queues.consumers]]
+queue = "discord-messages"
